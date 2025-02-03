@@ -1,0 +1,44 @@
+/* Container styling for the image grid */
+.tabContainer {
+    /* padding: 2rem; */
+    /* background: linear-gradient(145deg, #f8fafc, #e2e8f0); */
+    border-radius: 12px;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* Card styling */
+  .imageCard {
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    border: 3px solid linear-gradient(145deg, #ebebfd, #e0e0f5);; 
+  }
+  
+  .imageCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 3px solid linear-gradient(145deg, #ebebfd, #e0e0f5);; /* Highlight color */
+  }
+  
+  /* Highlight selected card */
+  .selectedCard {
+    border: 3px solid #6c5ce7; /* Highlight color */
+    box-shadow: 0 8px 16px rgba(108, 92, 231, 0.5);
+    transform: translateY(0); /* Keep it grounded */
+  }
+
+  /* Image styling inside the card */
+  .cardImg {
+    object-fit: cover;
+    height: 200px;
+    transition: transform 0.3s ease;
+  }
+  
+  .imageCard:hover .cardImg,
+  .selectedCard .cardImg {
+    transform: scale(1.05);
+  }
+  

@@ -1,0 +1,170 @@
+/* .tabContainer {
+    width: 100%;
+    background-color: #f8f9ff;
+  }
+  
+  .nav {
+    margin-top: 5rem;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .tab {
+    all: unset;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    background: #d7d1e9;
+    border-radius: 100px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  
+  .tab:hover {
+    background: #5832d6;
+    color: white;
+  }
+  
+  .activeTab {
+    background: #5832d6;
+    color: white;
+  }
+  
+  .content {
+    padding: 16px;
+  } */
+
+  .tabContainer {
+    width: 100%;
+    background-color: #f8f9ff;
+  }
+  
+  .nav {
+    margin-top: 5rem;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scroll-behavior: smooth;
+    flex-wrap: wrap;
+  }
+  
+  /* For screens smaller than 768px */
+  @media (max-width: 768px) {
+    .nav {
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      padding-bottom: 8px; /* Add space for the scrollbar */
+      margin-top: 3rem;
+      gap: 12px;
+    }
+  }
+  
+  /* For very small screens */
+  @media (max-width: 480px) {
+    .nav {
+      margin-top: 2rem;
+      gap: 8px;
+    }
+  }
+  
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .tab {
+    all: unset;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    background: #d7d1e9;
+    border-radius: 100px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Adjust tab sizes for different screens */
+  @media (max-width: 768px) {
+    .tab {
+      padding: 10px 20px;
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tab {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+  }
+  
+  .tab:hover {
+    background: #5832d6;
+    color: white;
+  }
+  
+  .activeTab {
+    background: #5832d6;
+    color: white;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  /* Add scroll indicators for mobile */
+  .navContainer {
+    position: relative;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .navContainer::before,
+    .navContainer::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 24px;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+  
+    .navContainer::before {
+      left: 0;
+      background: linear-gradient(to right, #f8f9ff, transparent);
+    }
+  
+    .navContainer::after {
+      right: 0;
+      background: linear-gradient(to left, #f8f9ff, transparent);
+    }
+  
+    .navContainer.hasScrollLeft::before {
+      opacity: 1;
+    }
+  
+    .navContainer.hasScrollRight::after {
+      opacity: 1;
+    }
+  }

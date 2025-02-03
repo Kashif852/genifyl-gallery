@@ -1,1 +1,3 @@
-# genifyl-gallery
+## Instaltion 
+npm install
+npm run dev

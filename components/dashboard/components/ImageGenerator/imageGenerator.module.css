@@ -1,0 +1,38 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.description {
+  color: gray;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.uploadBox {
+  border: 2px dashed #ccc;
+  padding: 2rem;
+  text-align: center;
+}
+
+.uploadBox.dragging {
+  border-color: blue;
+  background-color: #f0f8ff;
+}
+
+/* Add more styles as needed */

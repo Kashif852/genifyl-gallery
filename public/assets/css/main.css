@@ -1,0 +1,9 @@
+@import "./style.css";
+@import "./responsive.css";
+@import "swiper/css/virtual";
+@import "swiper/css";
+@import "rc-slider/assets/index.css";
+@import "react-modal-video/css/modal-video.css";
+@import "./custom.css";
+@import './login.css';
+@import './dashboard.css';

@@ -1,0 +1,36 @@
+.process-box {
+    padding: 2rem;
+    border-radius: 1rem;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .process-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .step-number {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .service-tags {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .tag {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background: #f4f5f6;
+    color: #664DFF;
+    font-size: 0.875rem;
+  }
+  
+  .icon i {
+    font-size: 2rem;
+    color: #664DFF;
+  }
