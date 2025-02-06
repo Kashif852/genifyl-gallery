@@ -1,4 +1,3 @@
-"use client"
 import React from "react";
 import Link from "next/link";
 
@@ -14,22 +13,14 @@ export default function FlatTitle() {
           <div className="col-12">
             <div className="heading">Masterpiece Gallery</div>
             <p className="subtitle text-center mb-4" style={{color: "white"}}>
-              Discover our collection of handcrafted artworks, from timeless portraits to stunning landscapes
+              Experience our diverse collection of innovative artworks, blending traditional techniques with modern creativity
             </p>
-            {/* <ul className="breadcrumbs">
-              <li className="icon-arrow-right relative">
-                <Link href={`/`}>Home</Link>
-              </li>
-              <li className="active">
-                <a href="#">Gallery</a>
-              </li>
-            </ul> */}
             <div className="gallery-highlights text-center mt-4" style={{color: "#09b6a2", fontSize: "1.5rem"}}>
-              <span className="highlight-item">10,000+ Artworks</span>
+              <span className="highlight-item">10,000+ Unique Pieces</span>
               <span className="separator mx-3">,</span>
-              <span className="highlight-item">40+ Expert Artists</span>
+              <span className="highlight-item">Creative Studio</span>
               <span className="separator mx-3">,</span>
-              <span className="highlight-item">Global Delivery</span>
+              <span className="highlight-item">Worldwide Shipping</span>
             </div>
           </div>
         </div>

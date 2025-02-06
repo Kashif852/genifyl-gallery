@@ -11,6 +11,14 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
   }
   
+  /* .imageCard {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  } */
+
   .imageCard:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -18,10 +26,12 @@
   
   .cardImg {
     object-fit: cover;
-    height: 200px;
+    height: auto;
     transition: transform 0.3s ease;
+    height: 200px;
   }
   
+
   .imageCard:hover .cardImg,
   .selectedCard .cardImg {
     transform: scale(1.05);

@@ -1,6 +1,5 @@
 "use client"
 import React from "react";
-import Link from "next/link";
 
 export default function FlatTitle() {
   return (
@@ -12,24 +11,16 @@ export default function FlatTitle() {
       <div className="themesflat-container">
         <div className="row">
           <div className="col-12">
-            <div className="heading">Our Artistic Journey</div>
+            <div className="heading">Creative Innovation Hub</div>
             <p className="subtitle text-center mb-4" style={{color: "white"}}>
-              A team of 40+ dedicated artists creating masterpieces for clients worldwide
+              Pioneering new frontiers in digital art and creative expression
             </p>
-            {/* <ul className="breadcrumbs">
-              <li className="icon-arrow-right relative">
-                <Link href={`/`}>Home</Link>
-              </li>
-              <li className="active">
-                <a href="#">About Us</a>
-              </li>
-            </ul> */}
             <div className="achievement-highlights text-center mt-4" style={{color: "#09b6a2", fontSize: "1.5rem"}}>
-              <span className="highlight-item">10,000+ Artworks Delivered</span>
+              <span className="highlight-item">10,000+ Unique Creations</span>
               <span className="separator mx-3">,</span>
-              <span className="highlight-item">Expert Artists</span>
+              <span className="highlight-item">Advanced Studio</span>
               <span className="separator mx-3">,</span>
-              <span className="highlight-item">Global Excellence</span>
+              <span className="highlight-item">Digital Excellence</span>
             </div>
           </div>
         </div>

@@ -224,14 +224,18 @@ const Tab2Grid = ({ images, handleImageClick, selectionType }) => {
                                 onClick={() => handleImageGrid(image, index)}
                                 className={styles.imageCard}
                             >
-                                <div style={{ position: 'relative', width: '100%', paddingBottom: '100%' }}>
+                                <div style={{ position: 'relative', width: '100%', height: 'auto' }}>
                                     <Image
                                         src={image.src}
                                         alt={`Image ${startIndex + index + 1}`}
-                                        fill
-                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        width={500}
+                                        height={300}
+                                        style={{
+                                            width: '100%',
+                                            height: 'auto',
+                                        }}
                                         priority={index < 4}
-                                        className={`${styles.cardImg} object-cover`}
+                                        className={styles.cardImg}
                                         quality={75}
                                     />
                                 </div>

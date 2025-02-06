@@ -13,7 +13,7 @@ import OrderProcess from "@/components/orderProcess/OrderProcess";
 import RoadMap from "@/components/orderProcess/RoadMap";
 
 export const metadata = {
-  title: "Contact Us || Cartoonify by genifyl",
+  title: "Contact Us || genifyl",
   description: "Get in touch with the Cartoonify team by genifyl. We are here to answer your queries about our AI-powered cartoon creation tools.",
   keywords: "Contact Cartoonify, genifyl, AI Cartoon Maker, AI tools, Cartoonify project, contact us",
   openGraph: {

@@ -5,7 +5,7 @@ import GalleryWithTabs from "@/components/gallery2/GalleryWithTabs";
 import Footer1 from "@/components/footers/Footer2";
 import Header1 from "@/components/headers/Header2";
 export const metadata = {
-  title: "Gallery || Cartoonify by genifyl",
+  title: "Gallery ||  genifyl",
   description: "Explore the Cartoonify gallery by genifyl to see stunning AI-generated cartoons. Discover the possibilities of AI-powered cartoon creation.",
   keywords: "Gallery, Cartoonify, genifyl, AI cartoons, AI-generated images, cartoon gallery",
   openGraph: {

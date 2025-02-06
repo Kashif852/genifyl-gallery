@@ -7,7 +7,7 @@ import ScrollTop from "@/components/common/ScrollTop";
 import MissionVision from "@/components/about/MissionVision";
 
 export const metadata = {
-  title: "About Us || Cartoonify by genifyl",
+  title: "About Us || genifyl",
   description: "Learn about Cartoonify by genifyl, an innovative AI-powered tool designed to transform images into stunning cartoons effortlessly.",
   keywords: "About Cartoonify, genifyl, AI tools, cartoon creation, image transformation, AI-powered cartoons",
   openGraph: {
