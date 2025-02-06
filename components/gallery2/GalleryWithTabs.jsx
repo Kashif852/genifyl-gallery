@@ -19,10 +19,6 @@ function GalleryWithTabs() {
   useEffect(()=>{
     const data = filterPaintingsByCategory(activeTab)
     setGrid(data);
-  },[])
-  useEffect(()=>{
-    const data = filterPaintingsByCategory(activeTab)
-    setGrid(data);
   },[activeTab])
 
   const handleImageClick = (image) =>{
@@ -77,13 +73,6 @@ function GalleryWithTabs() {
   return (
     <div style={{marginTop: "0", minHeight: "100vh"}}>
     <Container fluid>
-    {/* <div className="col-12" >
-        <div className="heading-section wow fadeInUp style-2 text-center" >
-          <div className="main-title">
-            Sketch Your <span className="animation-text tf-color-blue">Reality</span>
-          </div>
-        </div>
-      </div> */}
     <PaintTabs paint_categories={paint_categories} openTab={openTab} activeTab={activeTab}/>
     <PaintGrid images={grid} handleImageClick={handleImageClick} selectionType="singleSelection"/>
     </Container>

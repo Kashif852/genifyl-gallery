@@ -18,10 +18,10 @@ const WhatsAppWidget: React.FC = () => {
   return (
     <FloatingWhatsApp
       phoneNumber="+17278333236"
-      accountName="Cartoonify AI Support"
+      accountName="Genifyl Support"
       avatar="https://ik.imagekit.io/igwjlcyu8dw/Screenshot%202024-11-10%20at%2012.46.39%E2%80%AFAM_EZ-UnXLIh.png?updatedAt=1731181623576"
       statusMessage="Typically replies within 5-10 minutes"
-      chatMessage="👋 Hi there! Welcome to Cartoonify AI. Ready to create amazing cartoon art for your merchandise or gifts? Let us know how we can assist!"
+      chatMessage="👋 Hi there! Welcome to genifyl Let us know how we can assist!"
       notification={true}
       notificationDelay={60}
     />

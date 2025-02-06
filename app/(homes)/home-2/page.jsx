@@ -17,6 +17,7 @@ export const metadata = {
   title: "Home 2 || genifyl - AI Writer & Copywriting Nextjs Template",
   description: "genifyl - AI Writer & Copywriting Nextjs Template",
 };
+
 export default function page() {
   return (
     <>

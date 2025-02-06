@@ -1,11 +1,11 @@
 "use client";
 
-import { addMouse } from "@/utlis/addMouse";
+// import { addMouse } from "@/utlis/addMouse";
 import { useEffect } from "react";
 
 export default function Mouse() {
   useEffect(() => {
-    addMouse();
+    // addMouse();
   }, []);
   return (
     <>

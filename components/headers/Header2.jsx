@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
-import Image from "next/image";
 export default function Header2() {
   const [scrollHeight, setScrollHeight] = useState(0);
   const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
